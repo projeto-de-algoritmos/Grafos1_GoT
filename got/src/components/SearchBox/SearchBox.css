@@ -1,0 +1,33 @@
+.SearchBox {
+    display: flex;
+    width: 18em;
+    height: 12em;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 1px black;
+    border-radius: 20px;
+    justify-content: center;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    /* background-color: blanchedalmond; */
+}
+
+.characterArea {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+}
+
+.selection {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    justify-content: space-around;
+    /* background-color: burlywood; */
+}
