@@ -6,7 +6,6 @@ import { importData, gotNames } from "./utils";
 function App() {
   const data = importData();
   const names = gotNames();
-  console.log(names);
 
   return (
     <div className="App">
