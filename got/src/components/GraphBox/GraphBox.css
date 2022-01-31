@@ -1,0 +1,23 @@
+.graphArea {
+  display: flex;
+  margin: 20px;
+  width: 75vw;
+  height: 90vh;
+  background-color: aliceblue;
+}
+
+.bfsArea {
+  display: flex;
+  flex: 1;
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+}
+
+.dfsArea {
+  display: flex;
+  flex: 1;
+  background-color: salmon;
+  align-items: center;
+  justify-content: center;
+}
