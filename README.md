@@ -10,14 +10,14 @@
 | 18/0145088  |  Gabriel Bonifácio |
 
 ## Sobre 
-O projeto tem como objetivo observar a relação entre dois personagens de GoT, vamos utilizar algum tipo de busca (ainda em escolha) para verificar a relação entre os dois e se essa relação existe
+O projeto tem como objetivo observar a relação entre dois personagens quaisquer de Game of Thrones (GoT). Vamos utilizar os tipos de busca BFS e DFS para verificar a relação entre os dois e se essa relação existe
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
+**Linguagem**: Java Script<br>
+**Framework**: React JS<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
 ## Uso 
@@ -25,7 +25,3 @@ Explique como usar seu projeto caso haja algum passo a passo após o comando de 
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
