@@ -4,15 +4,11 @@ import "./SearchBox.css";
 function SearchBox(props) {
   const names = props.names;
 
-  const [search, setSearch] = useState("bfs");
   const [character1, setCharacter1] = useState(names[0]);
   const [character2, setCharacter2] = useState(names[0]);
 
   const handleSubmit = (e) => {
-    alert(character1+"\n"+character2+"\n"+search)
-    console.log(character1)
-    console.log(character2)
-    console.log(search)
+    alert(character1+"\n"+character2+"\n")
     e.preventDefault();
   }
 
@@ -45,29 +41,6 @@ function SearchBox(props) {
                 </option>
               ))}
             </select>
-          </div>
-        </div>
-
-        <div className="selection">
-          <div>
-            <input
-              type="radio"
-              value="bfs"
-              name="searchType"
-              checked={search === "bfs"}
-              onChange={(e) => setSearch(e.target.value)}
-            />{" "}
-            BFS
-          </div>
-          <div>
-            <input
-              type="radio"
-              value="dfs"
-              name="searchType"
-              checked={search !== "bfs"}
-              onChange={(e) => setSearch(e.target.value)}
-            />{" "}
-            DFS
           </div>
         </div>
 

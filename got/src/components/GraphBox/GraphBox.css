@@ -1,23 +1,42 @@
 .graphArea {
   display: flex;
-  margin: 20px;
-  width: 75vw;
-  height: 90vh;
+  margin: 5%;
+  flex: 1;
   background-color: aliceblue;
+  border-radius: 18px;
 }
 
 .bfsArea {
   display: flex;
   flex: 1;
-  background-color: aqua;
-  align-items: center;
-  justify-content: center;
+  background-color: #1B998B;
+  border-radius: 0px 18px 18px 0px;
 }
 
 .dfsArea {
   display: flex;
   flex: 1;
   background-color: salmon;
-  align-items: center;
+  border-radius: 18px 0px 0px 18px;
+}
+
+.headerSearch {
+  display: flex;
+  width: 8%;
+  height: 5%;
   justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: black;
+  border-right: 1.5px black solid;
+  border-bottom: 1.5px black solid;
+  border-bottom-right-radius: 18px;
+  color: whitesmoke;
+}
+
+.separateBar {
+  display: flex;
+  background-color: black;
+  width: 0.5px;
+  z-index: 100;
 }
