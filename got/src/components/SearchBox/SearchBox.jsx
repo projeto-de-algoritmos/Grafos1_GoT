@@ -8,7 +8,9 @@ function SearchBox(props) {
   const [character2, setCharacter2] = useState(names[0]);
 
   const handleSubmit = (e) => {
-    alert(character1+"\n"+character2+"\n")
+    props.parentCallback({
+      'source':character1,'target':character2
+    })
     e.preventDefault();
   }
 
