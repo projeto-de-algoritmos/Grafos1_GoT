@@ -4,18 +4,18 @@ import SearchBox from "./components/SearchBox/SearchBox.jsx";
 import GraphBox from "./components/GraphBox/GraphBox.jsx";
 import "./App.css";
 
-import { importData, gotNames } from "./utils";
+import { importData, gotNames, jsonToGraph, bfs, isReachable } from "./utils";
 
 function App() {
   const data = importData();
   const names = gotNames();
+  const graph = jsonToGraph(data);
   const [searchData,setSearchData] = useState({'source':names[0],'target':names[0]})
 
   const handleCallback = (searchChildData) =>{
     setSearchData({'source':searchChildData['source'],'target':searchChildData['target']})
-    // Aqui temos o nome dos personagens de origem e destino que são puxados do componente de busca
-    // Podemos criar a função das buscas dfs e bfs no arquivo utils.js e 
-    // importar aqui (linha 7) para enviar para o GraphBox
+    bfs(graph, searchData['source'], searchData['target'])
+    console.log(isReachable(graph, searchChildData['source'], searchChildData['target']))
   }
   
   return (
