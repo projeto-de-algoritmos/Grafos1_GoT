@@ -8,6 +8,7 @@
 
 .bfsArea {
   display: flex;
+  flex-direction: column;
   flex: 1;
   background-color: #1B998B;
   border-radius: 0px 18px 18px 0px;
@@ -15,6 +16,7 @@
 
 .dfsArea {
   display: flex;
+  flex-direction: column;
   flex: 1;
   background-color: salmon;
   border-radius: 18px 0px 0px 18px;
