@@ -1,15 +1,16 @@
 .graphArea {
   display: flex;
-  margin: 5%;
+  margin: 1% 5%;
   flex: 1;
   background-color: aliceblue;
   border-radius: 18px;
+  color: aliceblue;
 }
 
 .bfsArea {
   flex-direction: column;
   flex: 1;
-  background-color: #1b998b;
+  background-color: #b80000;
   border-radius: 0px 18px 18px 0px;
 }
 
@@ -23,7 +24,7 @@
 .dfsArea {
   flex-direction: column;
   flex: 1;
-  background-color: salmon;
+  background-color: #0D59D3;
   border-radius: 18px 0px 0px 18px;
 }
 
@@ -44,7 +45,7 @@
 .pathAreaDfs {
   display: flex;
   flex: 20;
-  background-color: salmon;
+  background-color: #0D59D3;
   border-bottom-left-radius: 18px;
   flex-direction: column;
   justify-content: space-evenly;
@@ -54,7 +55,7 @@
 .pathAreaBfs {
   display: flex;
   flex: 20;
-  background-color: #1b998b;
+  background-color: #b80000;
   border-bottom-right-radius: 18px;
   flex-direction: column;
   justify-content: space-evenly;

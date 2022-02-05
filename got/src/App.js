@@ -24,8 +24,13 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBox names={names} parentCallback={handleCallback} />
-      <GraphBox data={data} bfsPath={bfsPath} dfsPath={dfsPath} />
+      <div className="header">
+        <h1>GoT Network</h1>
+      </div>
+      <div className="content">
+        <SearchBox names={names} parentCallback={handleCallback} />
+        <GraphBox data={data} bfsPath={bfsPath} dfsPath={dfsPath} />
+      </div>
     </div>
   );
 }
