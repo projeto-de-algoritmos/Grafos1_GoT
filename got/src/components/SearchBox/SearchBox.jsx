@@ -8,10 +8,10 @@ function SearchBox(props) {
   const [character2, setCharacter2] = useState(names[0]);
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     props.parentCallback({
       'source':character1,'target':character2
     })
-    e.preventDefault();
   }
 
   return (

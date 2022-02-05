@@ -31,11 +31,13 @@ const jsonToGraph = (json) => {
   return graph;
 };
 
-function bfs(graph, posInitial, posDestiny) {
+const bfs = (graph, posInitial, posDestiny) => {
+  if (posInitial === posDestiny) {
+    return [posInitial];
+  }
+
   let queue = [[posInitial, []]],
     set = new Set();
-
-  console.log(graph);
 
   while (queue.length) {
     let [u, [...connection]] = queue.shift();
@@ -49,6 +51,45 @@ function bfs(graph, posInitial, posDestiny) {
     set.add(u);
   }
   return false;
-}
+};
 
-module.exports = { importData, gotNames, jsonToGraph, bfs };
+const dfs = (graph, posInitial, posDestiny) => {
+  if (posInitial === posDestiny) {
+    return [posInitial];
+  }
+
+  let visited = {};
+  let stack = [];
+  let connections = [];
+
+  const names = gotNames();
+
+  names.forEach((name) => {
+    visited[name] = false;
+  });
+
+  stack.push(posInitial);
+
+  while (stack.length !== 0) {
+    let s = stack.pop();
+
+    if (visited[s] === false) {
+      connections.push(s);
+      visited[s] = true;
+    }
+
+    for (let j = 0; j < graph[s].length; j++) {
+      if (graph[s][j] === posDestiny) {
+        connections.push(graph[s][j]);
+        return connections;
+      }
+      if (visited[graph[s][j]] === false) {
+        stack.push(graph[s][j]);
+      }
+    }
+  }
+
+  return false;
+};
+
+module.exports = { importData, gotNames, jsonToGraph, bfs, dfs };
