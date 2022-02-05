@@ -1,0 +1,63 @@
+.graphArea {
+  display: flex;
+  margin: 1% 5%;
+  flex: 1;
+  background-color: aliceblue;
+  border-radius: 18px;
+  color: aliceblue;
+}
+
+.bfsArea {
+  flex-direction: column;
+  flex: 1;
+  background-color: #b80000;
+  border-radius: 0px 18px 18px 0px;
+}
+
+.separateBar {
+  display: flex;
+  background-color: black;
+  width: 0.5px;
+  z-index: 100;
+}
+
+.dfsArea {
+  flex-direction: column;
+  flex: 1;
+  background-color: #0D59D3;
+  border-radius: 18px 0px 0px 18px;
+}
+
+.headerSearch {
+  display: flex;
+  width: 8%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  background-color: black;
+  border-right: 1.5px black solid;
+  border-bottom: 1.5px black solid;
+  border-bottom-right-radius: 18px;
+  color: whitesmoke;
+}
+
+.pathAreaDfs {
+  display: flex;
+  flex: 20;
+  background-color: #0D59D3;
+  border-bottom-left-radius: 18px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pathAreaBfs {
+  display: flex;
+  flex: 20;
+  background-color: #b80000;
+  border-bottom-right-radius: 18px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
