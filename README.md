@@ -1,6 +1,6 @@
 # Game of Thrones Network
 
-**Número da Lista**: 15<br>
+**Número da Lista**: 1<br>
 **Conteúdo da Disciplina**: Grafos1<br>
 
 ## Alunos
@@ -18,6 +18,10 @@
 </div>
 
 O projeto tem como objetivo observar a relação entre dois personagens quaisquer de Game of Thrones (GoT). Vamos utilizar os tipos de busca BFS e DFS para verificar a relação entre os dois e se essa relação existe.
+
+### Apresentação
+
+Para acessar a apresentação, basta acessar este link: <a href="https://youtu.be/iiXLOn63eVM" target="_blank">https://youtu.be/iiXLOn63eVM</a>
 
 ## Screenshots
 
